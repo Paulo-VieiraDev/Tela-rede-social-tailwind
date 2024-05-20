@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Viagens </title>
+</head>
+
+<body>
+    <div class="h-screen w-screen flex justify-center items-center bg-gradient-to-r from-sky-500 to-indigo-500">
+        <div class="bg-white text-black rounded-lg w-full mx-5 md:w-[40rem] space-y-6 p-10">
+
+            <div class="flex space-x-4 items-center">
+                <div class="w-12 h-12">
+                    <img alt="avatar" src="https://avatars.githubusercontent.com/u/46384321?v=4"
+                        class="rounded-full w-full h-full object-cover">
+                </div>
+                <div class="space-y-2">
+                    <div class="flex space-x-2 items-center">
+                        <h2 class="text-base">Paulo Vieira</h2>
+                        <svg class="h-4 w-4 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <div class="text-xs text-slate-800">postou uma atualização</div>
+                    </div>
+                    <p class="text-xs text-slate-800">1 ano atrás</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="text-sm leading-6 text-slate-700" id="paragrafo">
+                    Meu coração anseia por desbravar os horizontes deste vasto mundo, descobrindo cada pedacinho de
+                    beleza que ele tem a oferecer.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-6 col-span-2 gap-2">
+                <div class="overflow-hidden rounded-xl col-span-3 max-h-[14rem] relative">
+                    <img class="h-full w-full object-cover" src="/src/img/Paris.jpg" alt="">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-75 text-white text-center rounded-xl">
+                        <span class="text-lg">Paris</span>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-xl col-span-3 max-h-[14rem] relative">
+                    <img class="h-full w-full object-cover" src="/src/img/Cancun.jpg" alt="">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-75 text-white text-center rounded-xl">
+                        <span class="text-lg">Cancún</span>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-xl col-span-2 max-h-[10rem] relative">
+                    <img class="h-full w-full object-cover" src="/src/img/Miami.jpg" alt="">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-75 text-white text-center rounded-xl">
+                        <span class="text-lg">Miami</span>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-xl col-span-2 max-h-[10rem] relative">
+                    <img class="h-full w-full object-cover" src="/src/img/Madri.jpg" alt="">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-75 text-white text-center rounded-xl">
+                        <span class="text-lg">Madri</span>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-xl col-span-2 max-h-[10rem] relative">
+                    <img class="h-full w-full object-cover" src="/src/img/NY.jpg" alt="">
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-75 text-white text-center rounded-xl">
+                        <span class="text-lg">Nova York</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex justify-between pt-5">
+                <div class="flex items-center">
+                    <svg id="likeButton" class="h-4 w-4 text-red-500 cursor-pointer" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path id="likeIcon" stroke-linecap="round" stroke-linejoin="round"
+                            d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+                    </svg>
+                    <p id="likeCount" class="text-slate-800 text-sm ml-2"></p>
+                </div>
+                <div class="text-slate-800 text-sm">
+                    <p>23 comentários</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
